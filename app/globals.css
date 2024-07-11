@@ -31,3 +31,41 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Star rating wrapper */
+.star-rating {
+  direction: rtl; /* Reverse direction for correct highlighting */
+  font-size: 0; /* Remove space between inline-block elements */
+  unicode-bidi: bidi-override; /* For correct star order */
+}
+
+/* Hide radio button */
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+/* Star appearance */
+.star-rating label {
+  font-size: 2rem; /* Star size */
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Highlighting stars on hover */
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #f5a623; /* Highlight color */
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #db66ea;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, rgba(219,102,234,0.5), rgba(222,206,237,0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgba(219,102,234,0.5), rgba(222,206,237,0.5))
+}
