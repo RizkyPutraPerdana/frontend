@@ -62,7 +62,6 @@ body {
 .gradient-custom {
   /* fallback for old browsers */
   background: #db66ea;
-
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to bottom, rgba(219,102,234,0.5), rgba(222,206,237,0.5));
 

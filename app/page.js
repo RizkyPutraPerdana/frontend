@@ -3,8 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { Stack, Button, Card, CardText } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MovieCard from "./MovieCard";
-import MovieForms from "./MovieForm";
+import MovieForms from "./movieForm";
+import MovieCard from "./movieCard";
+
 
 export default function Home() {
   return (
@@ -32,12 +33,12 @@ export default function Home() {
       <div className="row">
         <div className="col-md-4">
           <br />
-          <MovieForms />
+            <MovieForms/>
           <br />
         </div>
       </div>
       <div className="bg-danger">
-        <MovieCard />
+        <MovieCard/>
       </div>
     </div>
   );
